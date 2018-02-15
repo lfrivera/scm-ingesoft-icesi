@@ -330,7 +330,7 @@ public class JustFlyControl {
 	 */
 	private static int getCodeKeyDown() {
 		
-		return -1;
+		return 40;
 		
 	}
 	

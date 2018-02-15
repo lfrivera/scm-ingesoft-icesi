@@ -58,7 +58,11 @@ public class Enemy implements IMotionable{
 
 	@Override
 	public boolean collision(CircleShape externalShape) {
-		return false;
+		
+	
+	
+	return CollisionHelper.getInstance().collision(externalShape, shape);
+		
 	}
 	
 	public Image show()
