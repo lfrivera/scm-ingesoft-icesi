@@ -7,6 +7,7 @@ import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.Random;
 
+import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
 import co.edu.icesi.tic.ingesoft.justfly.model.Enemy;
@@ -317,7 +318,8 @@ public class JustFlyControl {
 	 */
 	private static int getCodeKeyUp() {
 		
-		return -1;
+	
+		return 38;
 		
 	}
 	
@@ -328,7 +330,7 @@ public class JustFlyControl {
 	 */
 	private static int getCodeKeyDown() {
 		
-		return -1;
+		return 40;
 		
 	}
 	
