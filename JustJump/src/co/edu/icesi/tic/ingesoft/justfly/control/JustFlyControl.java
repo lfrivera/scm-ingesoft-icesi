@@ -328,6 +328,8 @@ public class JustFlyControl {
 	 */
 	private static int getCodeKeyDown() {
 		
+		
+		
 		return 40;
 		
 	}
