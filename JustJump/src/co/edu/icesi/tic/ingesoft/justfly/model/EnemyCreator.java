@@ -37,7 +37,32 @@ public class EnemyCreator {
 	public ArrayList<Enemy> generateInitialEnemies()
 	{
 		ArrayList<Enemy> response = new ArrayList<Enemy>();
-
+		int con=100;
+		while(con<=900) {
+			Enemy inicial=new Enemy(con, 0);
+			response.add(inicial);
+			con+=100;
+		}
+		con=0;
+		
+		while(con<=900) {
+			Enemy inicial=new Enemy(con, 460);
+			response.add(inicial);
+			con+=100;
+		}
+		con=100;
+		while(con<450) {
+			Enemy inicial=new Enemy(0, con);
+			response.add(inicial);
+			con+=120;
+		}
+		con=100;
+		while(con<450) {
+			Enemy inicial=new Enemy(900, con);
+			response.add(inicial);
+			con+=120;
+		}
+		
 		return response;
 	}
 	
