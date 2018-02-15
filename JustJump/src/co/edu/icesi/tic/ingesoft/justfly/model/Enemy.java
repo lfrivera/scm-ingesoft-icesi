@@ -58,7 +58,9 @@ public class Enemy implements IMotionable {
 
 	@Override
 	public void left() {
-
+		position.x--;
+		shape.getPosition().x = position.x;
+		shape.getPosition().y = position.y;
 	}
 
 	@Override
