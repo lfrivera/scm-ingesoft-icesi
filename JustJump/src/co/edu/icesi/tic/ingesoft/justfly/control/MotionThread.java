@@ -180,7 +180,9 @@ public class MotionThread extends Thread{
 	 */
 	private String composeMessage(int playerPoints) {
 	
-		return "";
+		String puntos="Puntos obtenidos: "+ playerPoints;			
+		
+		return puntos;
 		
 	}
 	
