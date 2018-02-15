@@ -9,60 +9,66 @@ import co.edu.icesi.tic.ingesoft.justfly.model.entity.CircleShape;
 
 /**
  * Class that represents an enemy in the game.
+ * 
  * @author lfrivera
  *
  */
-public class Enemy implements IMotionable{
+public class Enemy implements IMotionable {
 
 	/**
 	 * Position of the player.
 	 */
 	private Point position;
-	
+
 	/**
 	 * Width of the enemy.
 	 */
 	private int width;
-	
+
 	/**
 	 * Height of the enemy.
 	 */
 	private int height;
-	
+
 	/**
 	 * Shape of the enemy.
 	 */
 	private CircleShape shape;
-	
+
 	/**
 	 * Constructor of the class.
-	 * @param x Horizontal position of the enemy.
-	 * @param y Vertical position of the enemy.
+	 * 
+	 * @param x
+	 *            Horizontal position of the enemy.
+	 * @param y
+	 *            Vertical position of the enemy.
 	 */
-	public Enemy(int x, int y)
-	{
+	public Enemy(int x, int y) {
 		position = new Point(x, y);
 		width = height = 100;
-		shape = new CircleShape(50, x+50, y+50);
+		shape = new CircleShape(50, x + 50, y + 50);
 	}
-	
+
 	@Override
 	public void right() {
-		
+		position.x++;
+		shape.getPosition().x = position.x;
+		shape.getPosition().y = position.y;
 	}
 
 	@Override
 	public void left() {
-		
+		position.x--;
+		shape.getPosition().x = position.x;
+		shape.getPosition().y = position.y;
 	}
 
 	@Override
 	public boolean collision(CircleShape externalShape) {
 		return false;
 	}
-	
-	public Image show()
-	{
+
+	public Image show() {
 		URL path = (Player.class.getResource("sprites/" + "enemy" + ".gif"));
 		Image image = Toolkit.getDefaultToolkit().getImage(path);
 		return image;
@@ -100,5 +106,4 @@ public class Enemy implements IMotionable{
 		this.shape = shape;
 	}
 
-	
 }
