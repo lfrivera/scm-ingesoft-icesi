@@ -172,7 +172,7 @@ public class MotionThread extends Thread{
 	 * Allows to restart the game once a collision has occurred.
 	 */
 	private void restartGame() {
-		
+		window = new MainWindow(new Player(100, 100), fixedEnemies, new ArrayList<Enemy>());
 	}
 	
 	/**
