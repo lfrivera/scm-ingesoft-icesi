@@ -191,10 +191,10 @@ public class MotionThread extends Thread{
 	 * 
 	 * @param message The message to show.
 	 */
-private void showMessageOnWindow(String message) {
+    private void showMessageOnWindow(String message) {
 		
-		JOptionPane.showMessageDialog(null, message, "", JOptionPane.INFORMATION_MESSAGE);
-	}
+    	window.showMessage("Fallaste");
+    }
 	
 	/**
 	 * Allows to manage the automatic elements.
