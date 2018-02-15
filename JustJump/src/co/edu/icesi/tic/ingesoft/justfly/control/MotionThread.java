@@ -212,7 +212,7 @@ public class MotionThread extends Thread{
 	 */
 	public void stopMotion()
 	{
-
+		on = false; 
 	}
 	
 	

@@ -3,6 +3,8 @@ package co.edu.icesi.tic.ingesoft.justfly.model;
 import java.awt.Image;
 import java.awt.Point;
 import java.awt.Toolkit;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.net.URL;
 
 import co.edu.icesi.tic.ingesoft.justfly.model.entity.CircleShape;
@@ -90,14 +92,15 @@ public class Player implements IMotionable{
 	 * Method that allows to move to an upper position.
 	 */
 	public void up() {
-		
+		position.y-=1;
+		shape.getPosition().y-=1;
 	}
 	
 	/**
 	 * Method that allows to move to a lower position.
 	 */
 	public void down() {
-	
+	setPosition(new Point(position.x,position.y++)); 
 	}
 	
 	/**
