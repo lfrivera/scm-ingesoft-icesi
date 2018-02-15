@@ -78,7 +78,8 @@ public class Player implements IMotionable{
 	
 	@Override
 	public void right() {
-		
+		position.x++;
+		shape.setPosition(position);
 	}
 
 	@Override
