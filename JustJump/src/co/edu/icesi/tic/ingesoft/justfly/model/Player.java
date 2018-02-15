@@ -81,13 +81,13 @@ public class Player implements IMotionable{
 	@Override
 	public void right() {
 		position.x++;
-		shape.setPosition(position);
+		shape.getPosition().x++;
 	}
 
 	@Override
 	public void left() {
-		position.x = position.x -1 ;
-		shape.setPosition( position );
+		position.x--;
+		shape.getPosition().x--;
 	}
 	
 	/**
@@ -102,8 +102,8 @@ public class Player implements IMotionable{
 	 * Method that allows to move to a lower position.
 	 */
 	public void down() {
-	setPosition(new Point(position.x,position.y++)); 
-	shape.setPosition(position);;
+		position.y++; 
+		shape.getPosition().y++;
 	}
 	
 	/**
@@ -116,8 +116,8 @@ public class Player implements IMotionable{
 	}
 	
 	@Override
-	public boolean collision(CircleShape externalShape) {
-		return false;
+	public boolean collision(CircleShape externalShape) {		
+		return CollisionHelper.getInstance().collision(shape,externalShape); 
 	}
 
 	public Point getPosition() {
