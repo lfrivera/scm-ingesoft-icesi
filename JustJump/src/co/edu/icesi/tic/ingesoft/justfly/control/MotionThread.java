@@ -193,7 +193,7 @@ public class MotionThread extends Thread{
 	 */
     private void showMessageOnWindow(String message) {
 		
-    	window.showMessage("Fallaste");
+    	window.showMessage("Fallaste.");
     }
 	
 	/**
