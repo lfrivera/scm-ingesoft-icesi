@@ -80,7 +80,8 @@ public class Player implements IMotionable{
 	
 	@Override
 	public void right() {
-		
+		position.x++;
+		shape.setPosition(position);
 	}
 
 	@Override
@@ -101,7 +102,7 @@ public class Player implements IMotionable{
 	 * Method that allows to move to a lower position.
 	 */
 	public void down() {
-	
+	setPosition(new Point(position.x,position.y++)); 
 	}
 	
 	/**
@@ -109,6 +110,7 @@ public class Player implements IMotionable{
 	 */
 	public void sumOnePoint()
 	{
+		points++; //aumenta los puntos 
 		
 	}
 	
