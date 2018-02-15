@@ -340,8 +340,8 @@ public class JustFlyControl {
 	 * @return The code for the left key.
 	 */
 	private static int getCodeKeyLeft() {
-		
-		return -1;
+		int codigo = 30+7;
+		return codigo;
 		
 	}
 	
