@@ -317,7 +317,8 @@ public class JustFlyControl {
 	 */
 	private static int getCodeKeyUp() {
 		
-		return -1;
+		
+		return 38;
 		
 	}
 	
