@@ -102,8 +102,10 @@ public class Player implements IMotionable{
 	 * Method that allows to move to a lower position.
 	 */
 	public void down() {
-	setPosition(new Point(position.x,position.y++)); 
-	shape.setPosition(position);
+
+		position.y++; 
+		shape.setPosition(position);
+
 	}
 	
 	/**
@@ -116,8 +118,8 @@ public class Player implements IMotionable{
 	}
 	
 	@Override
-	public boolean collision(CircleShape externalShape) {
-		return false;
+	public boolean collision(CircleShape externalShape) {		
+		return CollisionHelper.getInstance().collision(shape,externalShape); 
 	}
 
 	public Point getPosition() {
