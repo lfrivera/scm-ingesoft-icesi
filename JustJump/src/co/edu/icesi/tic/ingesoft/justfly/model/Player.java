@@ -103,7 +103,7 @@ public class Player implements IMotionable{
 	 */
 	public void down() {
 		position.y++; 
-		shape.getPosition().x++;
+		shape.getPosition().y++;
 	}
 	
 	/**
