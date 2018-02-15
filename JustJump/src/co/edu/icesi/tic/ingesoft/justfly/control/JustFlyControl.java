@@ -317,7 +317,8 @@ public class JustFlyControl {
 	 */
 	private static int getCodeKeyUp() {
 		
-		return -1;
+		
+		return 38;
 		
 	}
 	
@@ -346,11 +347,11 @@ public class JustFlyControl {
 	/**
 	 * Allows to obtain the constant for the non-numpad right arrow key or the desired key for moving right the player.
 	 * 
-	 * @return The code for the down key.
+	 * @return The code for the right key.
 	 */
 	private static int getCodeKeyRight() {
 		
-		return -1;
+		return 39;
 		
 	}
 
