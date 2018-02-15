@@ -2,6 +2,8 @@ package co.edu.icesi.tic.ingesoft.justfly.control;
 
 import java.util.ArrayList;
 
+import javax.swing.JOptionPane;
+
 import co.edu.icesi.tic.ingesoft.justfly.model.Enemy;
 import co.edu.icesi.tic.ingesoft.justfly.model.IMotionable;
 import co.edu.icesi.tic.ingesoft.justfly.model.Player;
@@ -189,8 +191,9 @@ public class MotionThread extends Thread{
 	 * 
 	 * @param message The message to show.
 	 */
-	private void showMessageOnWindow(String message) {
+private void showMessageOnWindow(String message) {
 		
+		JOptionPane.showMessageDialog(null, message, "", JOptionPane.INFORMATION_MESSAGE);
 	}
 	
 	/**
