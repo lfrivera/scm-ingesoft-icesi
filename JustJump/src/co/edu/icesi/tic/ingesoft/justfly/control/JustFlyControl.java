@@ -318,7 +318,7 @@ public class JustFlyControl {
 	 */
 	private static int getCodeKeyUp() {
 		
-		JOptionPane.showMessageDialog(null, "flechita arriba");
+	
 		return 38;
 		
 	}
