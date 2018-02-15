@@ -81,13 +81,13 @@ public class Player implements IMotionable{
 	@Override
 	public void right() {
 		position.x++;
-		shape.setPosition(position);
+		shape.getPosition().x++;
 	}
 
 	@Override
 	public void left() {
 		position.x--;
-		shape.setPosition( position);
+		shape.getPosition().x--;
 	}
 	
 	/**
@@ -103,7 +103,7 @@ public class Player implements IMotionable{
 	 */
 	public void down() {
 		position.y++; 
-		shape.setPosition(position);
+		shape.getPosition().y++;
 	}
 	
 	/**
