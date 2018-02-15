@@ -109,8 +109,8 @@ public class Player implements IMotionable{
 	}
 	
 	@Override
-	public boolean collision(CircleShape externalShape) {
-		return false;
+	public boolean collision(CircleShape externalShape) {		
+		return CollisionHelper.getInstance().collision(shape,externalShape); 
 	}
 
 	public Point getPosition() {
