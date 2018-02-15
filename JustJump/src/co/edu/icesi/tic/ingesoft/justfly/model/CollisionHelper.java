@@ -43,7 +43,10 @@ public class CollisionHelper {
 	 */
 	public boolean collision(CircleShape a, CircleShape b)
 	{
-		return false;
+		return  (a.getPosition().getX()-a.getRadius()) >= (b.getPosition().getX()+b.getRadius())&&
+				(a.getPosition().getX()+a.getRadius()) <= (b.getPosition().getX()-b.getRadius())&&
+			    (a.getPosition().getY()-a.getRadius()) >= (b.getPosition().getY()+b.getRadius())&&
+			    (a.getPosition().getY()+a.getRadius()) <= (b.getPosition().getX()-b.getRadius());
 	}
 	
 }
